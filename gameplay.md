@@ -3,7 +3,6 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-
 - [FLCL King's game](#flcl-kings-game)
   - [screens](#screens)
   - [game](#game)
@@ -136,22 +135,43 @@ This is the closest to the game from the anime
 
 ## JackAstral's flash [game](https://www.newgrounds.com/portal/view/649434)
 
+It's the most different game from the original gameplay
+
 ### screens
 
 - home
 - game
+  - have expositions screens that are passed on click
+  - expose the story
+  - give you the game mechanics
 
 ### game
 
+- have a time limit (365 days) to burn as many buildings as you can
+- have 3 buttons
+  - about
+  - hideout
+  - shop
+- have a police gauge that increment automatically
+- time decrement automatically
+
 #### map
+
+- it's an isometric map
+- full of the same building
 
 #### avatar
 
+- don't have
+- just click on the building to burn
+- click on the hideout button to hide from police (remove 5 days)
+
 #### NPCs
 
-- **police**
-- **firefighter**
+none
 
 #### buildings
+
+one type
 
 #### score
