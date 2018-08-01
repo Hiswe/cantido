@@ -1,0 +1,15 @@
+{
+  "name": "cantido",
+  "version": "1.0.0",
+  "description": "cantido game from FLCL anime",
+  "main": "index.js",
+  "repository": "https://github.com/Hiswe/cantido.git",
+  "author": "Hiswe <hiswehalya@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "toc": "doctoc README.md gameplay.md --github"
+  },
+  "devDependencies": {
+    "doctoc": "^1.3.1"
+  }
+}
