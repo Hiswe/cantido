@@ -7,13 +7,14 @@
 - [map](#map)
 - [avatar](#avatar)
 - [NPCs](#npcs)
+  - [police](#police)
+  - [fireman](#fireman)
 - [buildings](#buildings)
 - [score](#score)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-<img src="assets/export/home.png" width="250" /> 
-<img src="assets/export/play.png" width="250" />
+<img src="assets/export/home.png" width="250" /><img src="assets/export/play.png" width="250" />
 
 ## screens
 
