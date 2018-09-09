@@ -3,7 +3,6 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-
 - [screens](#screens)
 - [map](#map)
 - [avatar](#avatar)
@@ -12,6 +11,9 @@
 - [score](#score)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+<img src="assets/export/home.png" width="250" /> 
+<img src="assets/export/play.png" width="250" />
 
 ## screens
 
@@ -32,10 +34,41 @@
 
 ## map
 
+- isometric map
+- size to be defined
+
 ## avatar
+
+- the player “sim like” arrow
+- the camera is always centered on it
+- jump square to square
 
 ## NPCs
 
+all the NPCs moves at a regular interval (can try with 1 second)
+
+### police
+
+- will try to catch you.
+- the more point you are, the more police there is.
+- can't be killed
+
+### fireman
+
+- will rebuild buildings (make a pause fore interval \* 3)
+- can be killed if you set fire on the same square
+- come in limited number (lets say 3)
+
 ## buildings
 
+- have 3 types of building
+  ⚠️ make sure that building aren't more than 1.5 taller than another
+  This can lead to hidden buildings…
+- building can be burned (dark square)
+  _optional_ make assets for crumbled buildings
+- _optional_ **weapons**
+  can be burned by only by a specific type of weapon
+
 ## score
+
+- each building burned add 100
