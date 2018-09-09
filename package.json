@@ -7,7 +7,7 @@
   "author": "Hiswe <hiswehalya@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "toc": "doctoc README.md other-gameplay.md --github"
+    "toc": "doctoc *.md --github"
   },
   "devDependencies": {
     "doctoc": "^1.3.1"
