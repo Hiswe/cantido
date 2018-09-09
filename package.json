@@ -6,6 +6,11 @@
   "repository": "https://github.com/Hiswe/cantido.git",
   "author": "Hiswe <hiswehalya@gmail.com>",
   "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": "8.11.4",
+    "yarn": "1.9.4"
+  },
   "scripts": {
     "toc": "doctoc *.md --github"
   },
