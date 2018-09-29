@@ -11,6 +11,8 @@ body {
   background: black;
   min-height: 100vh;
 }
-#game-container {
-  border: 2px solid grey;
+
+#game-container > canvas {
+  display: block;
+  border-radius: 1rem;
 }
