@@ -16,6 +16,7 @@
     "toc": "doctoc *.md --github"
   },
   "dependencies": {
+    "lodash.random": "^3.2.0",
     "phaser": "^3.13.0"
   },
   "devDependencies": {
