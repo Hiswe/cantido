@@ -12,7 +12,7 @@
     "yarn": "1.10.1"
   },
   "scripts": {
-    "dev": "parcel src/index.html --no-hmr",
+    "dev:phaser": "parcel src-phaser/index.html --no-hmr",
     "toc": "doctoc *.md --github"
   },
   "dependencies": {
