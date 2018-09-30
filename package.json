@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "cantido game from FLCL anime",
   "main": "index.js",
+  "homepage": "https://github.com/Hiswe/cantido",
   "repository": "https://github.com/Hiswe/cantido.git",
   "author": "Hiswe <hiswehalya@gmail.com>",
   "license": "MIT",
@@ -12,16 +13,23 @@
     "yarn": "1.10.1"
   },
   "scripts": {
+    "dev": "nuxt",
     "dev:phaser": "parcel src-phaser/index.html --no-hmr",
     "toc": "doctoc *.md --github"
   },
   "dependencies": {
     "config": "^2.0.1",
     "lodash.random": "^3.2.0",
+    "nuxt": "^2.0.0",
     "phaser": "^3.13.0"
   },
   "devDependencies": {
     "doctoc": "^1.3.1",
-    "parcel-bundler": "^1.10.1"
+    "node-sass": "^4.9.3",
+    "parcel-bundler": "^1.10.1",
+    "pug": "^2.0.3",
+    "pug-plain-loader": "^1.0.0",
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.20.2"
   }
 }
