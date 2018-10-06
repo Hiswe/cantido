@@ -1,5 +1,5 @@
 export default {
-  WIDTH: 14,
-  HEIGHT: 8,
+  WIDTH: 10,
+  HEIGHT: 6,
   TILE_SIZE: 64,
 }
