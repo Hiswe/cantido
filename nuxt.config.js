@@ -31,7 +31,7 @@ export default {
   modules: [],
   axios: {},
   plugins: [
-    // `@/plugins/global-components.js`,
+    `@/plugins/global-components.js`,
     // `@/plugins/i18n.js`,
     // { src: `@/plugins/browser-components.js`, ssr: false },
     // { src: `@/plugins/browser.js`, ssr: false },
