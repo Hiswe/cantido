@@ -5,7 +5,7 @@ export default {
     icon: {
       type: String,
       default: ``,
-    }
+    },
   }
 }
 </script>

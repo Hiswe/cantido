@@ -1,6 +1,6 @@
 <script>
 
-import mapSize from '@/utils/map-size'
+import mapSize from '../../utils/map-size'
 import CantidoPlayer from '~/components/player'
 import CantidoMap from '~/components/map'
 

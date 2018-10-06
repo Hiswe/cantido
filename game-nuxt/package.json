@@ -1,5 +1,5 @@
 {
-  "name": "cantido",
+  "name": "game-nuxt",
   "version": "1.0.0",
   "description": "cantido game from FLCL anime",
   "main": "index.js",
@@ -17,15 +17,18 @@
     "yarn": "1.10.1"
   },
   "scripts": {
-    "toc": "doctoc *.md --github",
-    "dev": "yarn dev:nuxt",
-    "dev:nuxt": "yarn workspace game-nuxt run dev",
-    "dev:phaser": "yarn workspace game-phaser run dev"
+    "dev": "nuxt",
+    "dev:phaser": "parcel src-phaser/index.html --no-hmr",
+    "toc": "doctoc *.md --github"
   },
   "dependencies": {
-    "lodash.random": "^3.2.0"
+    "nuxt": "^2.0.0"
   },
   "devDependencies": {
-    "doctoc": "^1.3.1"
+    "node-sass": "^4.9.3",
+    "pug": "^2.0.3",
+    "pug-plain-loader": "^1.0.0",
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.20.2"
   }
 }

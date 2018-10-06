@@ -1,31 +1,24 @@
 {
-  "name": "cantido",
+  "name": "game-phaser",
   "version": "1.0.0",
-  "description": "cantido game from FLCL anime",
+  "description": "cantido game from FLCL anime with phaser",
   "main": "index.js",
   "homepage": "https://github.com/Hiswe/cantido",
   "repository": "https://github.com/Hiswe/cantido.git",
   "author": "Hiswe <hiswehalya@gmail.com>",
   "license": "MIT",
   "private": true,
-  "workspaces": [
-    "game-phaser",
-    "game-nuxt"
-  ],
   "engines": {
     "node": "10.11.0",
     "yarn": "1.10.1"
   },
   "scripts": {
-    "toc": "doctoc *.md --github",
-    "dev": "yarn dev:nuxt",
-    "dev:nuxt": "yarn workspace game-nuxt run dev",
-    "dev:phaser": "yarn workspace game-phaser run dev"
+    "dev": "parcel src-phaser/index.html --no-hmr"
   },
   "dependencies": {
-    "lodash.random": "^3.2.0"
+    "phaser": "^3.13.0"
   },
   "devDependencies": {
-    "doctoc": "^1.3.1"
+    "parcel-bundler": "^1.10.1"
   }
 }

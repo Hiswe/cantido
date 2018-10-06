@@ -1,4 +1,4 @@
-import mapSize from '@/utils/map-size'
+import mapSize from '../../utils/map-size'
 
 export const state = () => {
   return {

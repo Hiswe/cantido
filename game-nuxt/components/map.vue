@@ -1,8 +1,6 @@
 <script>
 import { mapState } from 'vuex'
 
-import mapSize from '@/utils/map-size'
-
 export default {
   name: `cantido-map`,
   data() {
