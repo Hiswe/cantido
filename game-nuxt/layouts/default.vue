@@ -4,6 +4,12 @@ main(role="main")
 </template>
 
 <style lang="scss">
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html,
 body {
   margin: 0;

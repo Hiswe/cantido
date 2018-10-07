@@ -7,7 +7,7 @@ export default {
     return {
       icons: {
         0: ``,
-        1:  `🏛`,
+        1: `🏛`,
         2: `🏫`,
         3: `🏩`,
       },
@@ -38,16 +38,15 @@ export default {
 .map {
   margin: 0;
   display: grid;
-  width: calc(var(--map-width) + var(--map-columns) * 1px - 1px);
-  height: calc(var(--map-height) + var(--map-rows) * 1px - 1px);
+  width: var(--map-width);
+  height: var(--map-height);
   grid-template-rows: repeat(var(--map-rows), 1fr);
   grid-template-columns: repeat(var(--map-columns), 1fr);
-  grid-gap: 1px;
-  background: DarkSlateGrey;
-  border: 1px solid DarkSlateGrey;
+  outline: 1px solid DarkSlateGrey;
 
   &__tile {
     background: black;
+    border: 1px solid DarkSlateGrey;
   }
 }
 </style>

@@ -1,7 +1,7 @@
-import tileMap from '../assets/export/tile-map.png'
-import player from '../assets/export/player.png'
-import police from '../assets/export/police.png'
-import fireman from '../assets/export/fireman.png'
+import tileMap from '../../assets/export/tile-map.png'
+import player from '../../assets/export/player.png'
+import police from '../../assets/export/police.png'
+import fireman from '../../assets/export/fireman.png'
 
 const toLoad = [
   { name: `tileMap`, path: tileMap },

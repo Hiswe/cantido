@@ -1,4 +1,6 @@
 {
-  "cSpell.words": ["cantido"],
-  "prettier.disableLanguages": []
+  "cSpell.words": [
+    "cantido"
+  ],
+  "prettier.requireConfig": true
 }
