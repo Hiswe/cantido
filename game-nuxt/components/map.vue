@@ -43,11 +43,11 @@ export default {
   height: var(--map-height);
   grid-template-rows: repeat(var(--map-rows), 1fr);
   grid-template-columns: repeat(var(--map-columns), 1fr);
-  outline: 1px solid DarkSlateGrey;
+  outline: 1px solid var(--c-primary-darker);
 
   &__tile {
     background: black;
-    border: 1px solid DarkSlateGrey;
+    border: 1px solid var(--c-primary-darker);
   }
 }
 </style>

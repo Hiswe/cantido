@@ -4,6 +4,11 @@ main(role="main")
 </template>
 
 <style lang="scss">
+:root {
+  --c-primary-lighter: YellowGreen;
+  --c-primary: green;
+  --c-primary-darker: DarkSlateGrey;
+}
 *,
 *::before,
 *::after {

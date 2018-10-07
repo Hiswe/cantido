@@ -56,6 +56,6 @@ cantido-sprite.player(icon="👤" :style="styles")
   position: absolute;
   top: 0;
   left: 0;
-  transition: transform 0.15s;
+  transition: transform 0.1s;
 }
 </style>

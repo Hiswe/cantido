@@ -1,14 +1,15 @@
 <script>
-
 import mapSize from '../../utils/map-size'
 import CantidoPlayer from '~/components/player'
 import CantidoMap from '~/components/map'
+import CantidoGui from '~/components/gui'
 
 export default {
   name: `page-home`,
   components: {
     CantidoMap,
     CantidoPlayer,
+    CantidoGui,
   },
   computed: {
     styles() {
@@ -20,14 +21,15 @@ export default {
         '--tile-size': `${mapSize.TILE_SIZE}px`,
       }
     },
-  }
+  },
 }
 </script>
 
 <template lang="pug">
 section.gameboard(:style="styles")
-  cantido-map
+  cantido-gui
   cantido-player
+  cantido-map
 </template>
 
 <style lang="scss" scoped>
