@@ -6,11 +6,16 @@ export const state = () => {
   const columns = Array.from({ length: mapSize.WIDTH })
   const rows = Array.from({ length: mapSize.HEIGHT })
 
-  const level = rows.map((row, rowIndex) =>
-    columns.map((col, colIndex) => ({
-      type: random(0, 3),
-      id: `${rowIndex}-${colIndex}`,
-    })),
-  )
+  const level = rows.map((row, rowIndex) => {
+    return columns.map((col, colIndex) => {
+      const type = random(0, 3)
+      return {
+        type,
+        id: `${rowIndex}-${colIndex}`,
+        burnable: type !== 0,
+        burning: false,
+      }
+    })
+  })
   return level
 }

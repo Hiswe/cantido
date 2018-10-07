@@ -3,6 +3,7 @@ import mapSize from '../../utils/map-size'
 import CantidoPlayer from '~/components/player'
 import CantidoMap from '~/components/map'
 import CantidoGui from '~/components/gui'
+import CantidoFireman from '~/components/fireman'
 
 export default {
   name: `page-home`,
@@ -10,6 +11,7 @@ export default {
     CantidoMap,
     CantidoPlayer,
     CantidoGui,
+    CantidoFireman,
   },
   computed: {
     styles() {
@@ -30,6 +32,7 @@ section.gameboard(:style="styles")
   cantido-gui
   cantido-player
   cantido-map
+  cantido-fireman
 </template>
 
 <style lang="scss" scoped>

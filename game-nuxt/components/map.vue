@@ -10,7 +10,6 @@ export default {
         1: `🏛`,
         2: `🏫`,
         3: `🏩`,
-        4: `🔥`,
       },
     }
   },
@@ -31,7 +30,7 @@ export default {
   cantido-sprite.map__tile(
     v-for="tile in scene"
     :key="tile.id"
-    :icon="icons[tile.type]"
+    :icon="tile.burning ? `🔥` : icons[tile.type]"
   )
 </template>
 
