@@ -5,13 +5,13 @@ import { ACTIONS as playerActions } from '~/store/player'
 
 const keysToDirection = {
   ArrowUp: `up`,
-  w: `up`,
+  KeyW: `up`,
   ArrowRight: `right`,
-  d: `right`,
+  KeyWD: `right`,
   ArrowDown: `down`,
-  s: `down`,
+  KeyS: `down`,
   ArrowLeft: `left`,
-  a: `left`,
+  KeyA: `left`,
 }
 
 export default {
@@ -25,20 +25,24 @@ export default {
   computed: {
     styles() {
       return {
-        top: `${this.pixelPosition[1]}px`,
-        left: `${this.pixelPosition[0]}px`,
+        transform: `translate(${this.pixelPosition[0]}px, ${
+          this.pixelPosition[1]
+        }px)`,
       }
     },
     ...mapGetters(`player`, [`pixelPosition`]),
   },
   methods: {
     handleKeyboard(event) {
-      const { key } = event
-      if (key in keysToDirection) {
-        this[playerActions.MOVE](keysToDirection[key])
+      const { code } = event
+      if (code in keysToDirection) {
+        this[playerActions.MOVE](keysToDirection[code])
+      }
+      if (code === `Space`) {
+        this[playerActions.BURN]()
       }
     },
-    ...mapActions(`player`, [playerActions.MOVE]),
+    ...mapActions(`player`, [playerActions.MOVE, playerActions.BURN]),
   },
 }
 </script>
@@ -50,5 +54,8 @@ cantido-sprite.player(icon="👤" :style="styles")
 <style lang="scss" scoped>
 .player {
   position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.15s;
 }
 </style>

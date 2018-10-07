@@ -1,11 +1,13 @@
 import * as mapPosition from '../../utils/map-position'
 
-const MUTATIONS = {
+export const MUTATIONS = {
   MOVE: `PLAYER_MOVE`,
+  BURN: `PLAYER_BURN`,
 }
 const DIRECTIONS = [`up`, `right`, `down`, `left`]
 export const ACTIONS = {
   MOVE: `PLAYER_MOVE`,
+  BURN: `PLAYER_BURN`,
 }
 
 export const state = () => {
@@ -31,6 +33,9 @@ export const mutations = {
     if (payload === `left`) x = x - 1
     state.position = mapPosition.safePos([x, y])
   },
+  [MUTATIONS.BURN](state, payload) {
+    console.log(payload)
+  },
 }
 
 export const actions = {
@@ -38,5 +43,9 @@ export const actions = {
     const { commit } = store
     if (!DIRECTIONS.includes(payload)) return
     commit(MUTATIONS.MOVE, payload)
+  },
+  [ACTIONS.BURN](store) {
+    const { state, commit } = store
+    commit(MUTATIONS.BURN, state.position, { root: true })
   },
 }
