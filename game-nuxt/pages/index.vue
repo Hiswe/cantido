@@ -1,9 +1,9 @@
 <script>
-import mapSize from '../../utils/map-size'
+import mapSize from '~/utils/map-size'
 import CantidoPlayer from '~/components/player'
 import CantidoMap from '~/components/map'
 import CantidoGui from '~/components/gui'
-import CantidoFireman from '~/components/fireman'
+import CantidoNpcs from '~/components/non-player-characters'
 
 export default {
   name: `page-home`,
@@ -11,7 +11,7 @@ export default {
     CantidoMap,
     CantidoPlayer,
     CantidoGui,
-    CantidoFireman,
+    CantidoNpcs,
   },
   computed: {
     styles() {
@@ -31,8 +31,8 @@ export default {
 section.gameboard(:style="styles")
   cantido-gui
   cantido-player
+  cantido-npcs
   cantido-map
-  cantido-fireman
 </template>
 
 <style lang="scss" scoped>

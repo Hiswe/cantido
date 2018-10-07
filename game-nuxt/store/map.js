@@ -1,6 +1,6 @@
 import random from 'lodash.random'
 
-import mapSize from '../../utils/map-size'
+import mapSize from '~/utils/map-size'
 
 export const state = () => {
   const columns = Array.from({ length: mapSize.WIDTH })

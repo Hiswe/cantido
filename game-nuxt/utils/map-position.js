@@ -7,5 +7,5 @@ export function safePos([x, y]) {
 }
 
 export function toPixel(coordinates) {
-  return coordinates.map(pos => pos * mapSize.TILE_SIZE)
+  return coordinates.map(pos => `${pos * mapSize.TILE_SIZE}px`)
 }

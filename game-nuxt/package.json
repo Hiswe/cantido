@@ -8,21 +8,16 @@
   "author": "Hiswe <hiswehalya@gmail.com>",
   "license": "MIT",
   "private": true,
-  "workspaces": [
-    "game-phaser",
-    "game-nuxt"
-  ],
   "engines": {
     "node": "10.11.0",
     "yarn": "1.10.1"
   },
   "scripts": {
-    "dev": "nuxt",
-    "dev:phaser": "parcel src-phaser/index.html --no-hmr",
-    "toc": "doctoc *.md --github"
+    "dev": "nuxt"
   },
   "dependencies": {
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "shortid": "^2.2.13"
   },
   "devDependencies": {
     "node-sass": "^4.9.3",

@@ -1,4 +1,4 @@
-import * as mapPosition from '../../utils/map-position'
+import * as mapPosition from '~/utils/map-position'
 
 export const MUTATIONS = {
   MOVE: `PLAYER_MOVE`,

@@ -24,10 +24,9 @@ export default {
   },
   computed: {
     styles() {
+      const [x, y] = this.pixelPosition
       return {
-        transform: `translate(${this.pixelPosition[0]}px, ${
-          this.pixelPosition[1]
-        }px)`,
+        transform: `translate(${x}, ${y})`,
       }
     },
     ...mapGetters(`player`, [`pixelPosition`]),
